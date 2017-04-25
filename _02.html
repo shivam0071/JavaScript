@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+
+		<TITLE>
+			JavaScript 
+		</TITLE>
+		<Script type = "text/javascript">
+
+			function substitute()
+			{
+				var myValue = document.getElementById('myTextBox').value;
+				if (myValue.length == 0)
+					{
+						alert('Please Enter the real Value in the text box');
+						return;	
+					}
+				var myTitle = document.getElementById('title');
+				myTitle.innerHTML = myValue; 
+			}	
+		</Script>
+	</HEAD>
+
+	<BODY>
+
+		<h1 id= "title">This is a test</h1>
+		<input type = "text" id ="myTextBox" value = "Hi Bitch!!!!"/>
+		<input type = "submit" value ="Click Me" onclick="substitute()" />
+
+
+
+	</BODY>
+
+
+
+
+</HTML>
